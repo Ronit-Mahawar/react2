@@ -1,6 +1,13 @@
 import Student from "./Student";
 import List from "./List"   
-import Button from "./Button"            
+import Button from "./Button"  
+import ProfilePic from "./ProfilePic";  
+import Component from "./Component";        
+import ColorPicker from "./ColorPicker";
+import Count from "./Count";
+import Car from "./Car";
+import FoodList from "./FoodList";
+import CarList from "./CarList";
 
 function App() {
   const fruits=[{name:"apple",id:"1"},
@@ -13,12 +20,19 @@ function App() {
 
 ]
   return(<>
+  <CarList/>
+  <FoodList/>
+  <Car/>
+  <Count/>
+  <Component/>
   <Student name="ronit" rollNo={18} isStudent={true}/>
   <List itemlist={fruits}/>  
   <Button/>
+  <ProfilePic/>
+  <ColorPicker/>
   </>
   );
-    f
+    
 
 }
 
